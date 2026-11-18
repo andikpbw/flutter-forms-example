@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#070A12"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#00F5D4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="460" height="280" rx="18" fill="url(#bg)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <circle cx="26" cy="26" r="6" fill="#00F5D4">
+    <animate attributeName="r" values="5;7;5" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="40" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC">Smart Form &amp; Password Entropy Meter</text>
+  <text x="436" y="30" font-family="monospace" font-size="10.5" fill="#00F5D4" text-anchor="end">SmartFormBuilder</text>
+
+  <!-- Form Readiness Bar -->
+  <g transform="translate(24, 48)">
+    <text x="0" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#94A3B8">Form Readiness (5/5 valid)</text>
+    <text x="412" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#10B981" text-anchor="end">100%</text>
+    <rect x="0" y="16" width="412" height="6" rx="3" fill="#1E293B"/>
+    <rect x="0" y="16" width="412" height="6" rx="3" fill="url(#accent)">
+      <animate attributeName="width" values="280;412;280" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Smart Email Field + Quick Domain Pills -->
+  <g transform="translate(24, 82)">
+    <text x="0" y="12" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#E2E8F0">Work Email *</text>
+    <rect x="0" y="18" width="412" height="38" rx="10" fill="#131D31" stroke="#00F5D4" stroke-width="1.6"/>
+    <text x="14" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="600" fill="#F8FAFC">@  founder@humanize.id</text>
+    <text x="394" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="900" fill="#10B981" text-anchor="end">✓</text>
+
+    <g transform="translate(0, 62)">
+      <rect x="0" y="0" width="90" height="20" rx="10" fill="#00F5D4" fill-opacity="0.18" stroke="#00F5D4" stroke-width="1"/>
+      <text x="45" y="13.5" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#00F5D4" text-anchor="middle">@humanize.id</text>
+
+      <rect x="98" y="0" width="78" height="20" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="137" y="13.5" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#94A3B8" text-anchor="middle">@gmail.com</text>
+
+      <rect x="184" y="0" width="86" height="20" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="227" y="13.5" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#94A3B8" text-anchor="middle">@outlook.com</text>
+    </g>
+  </g>
+
+  <!-- Password Field + 4-Segment Meter + Rules -->
+  <g transform="translate(24, 178)">
+    <text x="0" y="12" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#E2E8F0">Master Password *</text>
+    <rect x="0" y="18" width="412" height="36" rx="10" fill="#1E293B" stroke="#475569" stroke-width="1.2"/>
+    <text x="14" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F8FAFC">🔒  Humanize#2026!</text>
+    <text x="396" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#10B981" text-anchor="end">STRONG</text>
+
+    <g transform="translate(0, 62)">
+      <rect x="0" y="0" width="97" height="5" rx="2.5" fill="#10B981"/>
+      <rect x="105" y="0" width="97" height="5" rx="2.5" fill="#10B981"/>
+      <rect x="210" y="0" width="97" height="5" rx="2.5" fill="#10B981"/>
+      <rect x="315" y="0" width="97" height="5" rx="2.5" fill="#10B981">
+        <animate attributeName="fill-opacity" values="0.3;1.0;0.3" dur="1.6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g transform="translate(0, 73)">
+      <text x="0" y="11" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#34D399">✓ 8+ chars    ✓ Uppercase (A-Z)    ✓ Number (0-9)    ✓ Symbol (!@#$)</text>
+    </g>
+  </g>
+</svg>

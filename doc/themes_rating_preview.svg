@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#070A12"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#00F5D4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="460" height="280" rx="18" fill="url(#bg)" stroke="#334155" stroke-width="1.5"/>
+
+  <circle cx="26" cy="26" r="6" fill="#FBBF24"/>
+  <text x="40" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC">Star Rating, NPS Slider &amp; 6 Studio Themes</text>
+  <text x="436" y="30" font-family="monospace" font-size="10.5" fill="#FBBF24" text-anchor="end">FormsStyle</text>
+
+  <!-- 5-Star Rating -->
+  <g transform="translate(24, 52)">
+    <text x="0" y="13" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#E2E8F0">Overall Experience Rating *</text>
+    <rect x="324" y="0" width="88" height="18" rx="5" fill="#F59E0B" fill-opacity="0.2" stroke="#FBBF24" stroke-width="1"/>
+    <text x="368" y="12.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#FBBF24" text-anchor="middle">Outstanding!</text>
+
+    <rect x="0" y="22" width="412" height="44" rx="11" fill="#1E293B" stroke="#334155" stroke-width="1.2"/>
+    <text x="18" y="51" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#FBBF24" letter-spacing="8">★★★★★</text>
+    <text x="394" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#F8FAFC" text-anchor="end">5.0 / 5.0</text>
+  </g>
+
+  <!-- NPS Slider -->
+  <g transform="translate(24, 134)">
+    <text x="0" y="13" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#E2E8F0">Likelihood to Recommend (NPS Score)</text>
+    <rect x="362" y="0" width="50" height="19" rx="9.5" fill="url(#accent)"/>
+    <text x="387" y="13" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">95%</text>
+
+    <rect x="0" y="28" width="412" height="10" rx="5" fill="#1E293B"/>
+    <rect x="0" y="28" width="370" height="10" rx="5" fill="url(#accent)">
+      <animate attributeName="width" values="300;390;300" dur="3.4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- 6 Studio Themes -->
+  <g transform="translate(24, 200)">
+    <text x="0" y="12" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#94A3B8">6 Built-in Studio Theme Presets:</text>
+    <g transform="translate(0, 22)">
+      <rect x="0" y="0" width="63" height="28" rx="8" fill="#4F46E5" fill-opacity="0.25" stroke="#6366F1" stroke-width="1.2"/>
+      <text x="31.5" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#A5B4FC" text-anchor="middle">Indigo</text>
+
+      <rect x="70" y="0" width="63" height="28" rx="8" fill="#00F5D4" fill-opacity="0.18" stroke="#00F5D4" stroke-width="1.2"/>
+      <text x="101.5" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#00F5D4" text-anchor="middle">Cyber</text>
+
+      <rect x="140" y="0" width="63" height="28" rx="8" fill="#38BDF8" fill-opacity="0.2" stroke="#38BDF8" stroke-width="1.2"/>
+      <text x="171.5" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#7DD3FC" text-anchor="middle">Aurora</text>
+
+      <rect x="210" y="0" width="63" height="28" rx="8" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1.2"/>
+      <text x="241.5" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#34D399" text-anchor="middle">Emerald</text>
+
+      <rect x="280" y="0" width="63" height="28" rx="8" fill="#F97316" fill-opacity="0.2" stroke="#F97316" stroke-width="1.2"/>
+      <text x="311.5" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#FDBA74" text-anchor="middle">Sunset</text>
+
+      <rect x="350" y="0" width="62" height="28" rx="8" fill="#94A3B8" fill-opacity="0.22" stroke="#CBD5E1" stroke-width="1.2"/>
+      <text x="381" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#E2E8F0" text-anchor="middle">Soft UI</text>
+    </g>
+  </g>
+</svg>
