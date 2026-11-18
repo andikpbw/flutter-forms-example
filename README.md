@@ -11,22 +11,22 @@ A **modern, lightweight, and customizable** Flutter forms library featuring a de
 > 🌟 Supported & Powered by [Humanize AI](https://humanize.id)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andikpbw/flutter-forms-example/main/doc/showcase_banner.svg?v=1.0.0" alt="forms_example interactive animated UI showcase" width="100%" />
+  <img src="https://raw.githubusercontent.com/andikpbw/flutter-forms-example/main/doc/showcase_banner.gif?v=1.0.1" alt="forms_example real Flutter UI animated showcase" width="100%" />
 </p>
 
 ---
 
-## 🎬 Live Animated UI Preview
+## 🎬 Real Flutter UI Animated Walkthrough
 
-| 1. Smart Schema Form & Password Entropy (`SmartFormBuilder`) | 2. Multi-Step Validated Form Wizard (`ModernFormStepper`) |
+| 1. Account Registration & Password Meter (`SmartFormBuilder`) | 2. Multi-Step Onboarding Wizard (`ModernFormStepper`) |
 | :---: | :---: |
-| <img src="https://raw.githubusercontent.com/andikpbw/flutter-forms-example/main/doc/smart_form_preview.svg?v=1.0.0" alt="Smart Schema Form & Password Entropy Preview" width="100%" /> | <img src="https://raw.githubusercontent.com/andikpbw/flutter-forms-example/main/doc/wizard_stepper_preview.svg?v=1.0.0" alt="Multi-Step Validated Form Wizard Preview" width="100%" /> |
-| Live completion progress meter, one-tap `@humanize.id` / `@gmail.com` email domain chips, 4-bar password strength meter, and rule checklist pills. | Animated horizontal step nodes, per-step validation gates, multi-select deployment platform chips, and step navigation controls. |
+| <img src="https://raw.githubusercontent.com/andikpbw/flutter-forms-example/main/doc/smart_form_preview.gif?v=1.0.1" alt="SmartFormBuilder Real UI Animation" width="100%" /> | <img src="https://raw.githubusercontent.com/andikpbw/flutter-forms-example/main/doc/wizard_stepper_preview.gif?v=1.0.1" alt="ModernFormStepper Real UI Animation" width="100%" /> |
+| Real-time form completion tracking (`0%` → `100%`), one-tap `@humanize.id` email domain chip, live 4-bar password strength meter (`Weak` → `Strong`), and submission confirmation. | Step-by-step progression across `Account Identity`, `Stack & Capacity`, and `Verify & Launch` with per-step validation gates and multi-select platform chips. |
 
-| 3. Luhn Card Detector & 6-Digit OTP (`ModernOtpField`) | 4. Star Rating, NPS Slider & 6 Studio Themes (`FormsStyle`) |
+| 3. Payment Checkout, Luhn Card & 6-Digit OTP (`ModernOtpField`) | 4. Customer Feedback & 6 Theme Presets (`FormsStyle`) |
 | :---: | :---: |
-| <img src="https://raw.githubusercontent.com/andikpbw/flutter-forms-example/main/doc/payment_otp_preview.svg?v=1.0.0" alt="Luhn Credit Card Detector & 6-Digit OTP Preview" width="100%" /> | <img src="https://raw.githubusercontent.com/andikpbw/flutter-forms-example/main/doc/themes_rating_preview.svg?v=1.0.0" alt="Interactive Star Rating, Slider & 6 Studio Themes Preview" width="100%" /> |
-| Automatic 4-digit card number formatting, dynamic network detection (`VISA`, `MASTERCARD`, `AMEX`, `DISCOVER`), `LUHN OK` badge, and segmented OTP boxes. | 5-star rating bar with sentiment feedback (`Outstanding!`), smooth NPS slider badge, and 6 built-in studio theme presets. |
+| <img src="https://raw.githubusercontent.com/andikpbw/flutter-forms-example/main/doc/payment_otp_preview.gif?v=1.0.1" alt="Payment & 6-Digit OTP Real UI Animation" width="100%" /> | <img src="https://raw.githubusercontent.com/andikpbw/flutter-forms-example/main/doc/themes_rating_preview.gif?v=1.0.1" alt="6 Studio Theme Presets Real UI Animation" width="100%" /> |
+| Automatic 4-digit card formatting (`4242 4242 4242 4242`), live `VISA` network badge, instant `LUHN OK` checksum verification, numeric seat stepper, and 6-digit OTP verification. | Interactive 5-star rating bar (`Outstanding!`), smooth NPS satisfaction slider, multi-select feature tags, and live switching across all 6 `FormsStyle` presets. |
 
 ---
 
@@ -34,13 +34,13 @@ A **modern, lightweight, and customizable** Flutter forms library featuring a de
 
 - 🧩 **Declarative Schema Form Builder** (`SmartFormBuilder`):
   - Render complete, validated forms from a declarative `List<FormFieldConfig>` or choose from 4 built-in turnkey templates:
-    - `FormTemplatePreset.authSignup` — Developer registration with smart email chips & password strength meter.
-    - `FormTemplatePreset.paymentCheckout` — Pro checkout with Luhn credit card brand detector & 6-digit 3D-Secure OTP.
-    - `FormTemplatePreset.feedbackSurvey` — Experience rating stars, NPS slider, and multi-select feature tags.
-    - `FormTemplatePreset.profileOnboarding` — Domain URL validation, target date picker, and edge auto-scaling switches.
-  - Built-in **Form Readiness Progress Bar** (`completed/total` valid fields & live percentage) and collapsible **Live JSON Payload Inspector**.
+    - `FormTemplatePreset.authSignup` — Account registration with smart email chips & password strength meter.
+    - `FormTemplatePreset.paymentCheckout` — Payment & billing checkout with Luhn credit card brand detector & 6-digit OTP.
+    - `FormTemplatePreset.feedbackSurvey` — Customer feedback with star rating, NPS slider, and multi-select topics.
+    - `FormTemplatePreset.profileOnboarding` — Workspace settings with domain URL validation, date picker, and toggles.
+  - Built-in **Completed Fields Progress Bar** (`completed of total` valid fields & live percentage) and collapsible **Live JSON Payload Inspector**.
 - 🧭 **Multi-Step Validated Form Wizard** (`ModernFormStepper`):
-  - Interactive horizontal step indicator bar with emerald checkmarks for completed steps and pulsing active node indicators.
+  - Interactive horizontal step indicator bar with emerald checkmarks for completed steps and active step badges.
   - Per-step validation gate ensures all required fields in the current step pass validation before advancing to the next step.
 - ⚡ **Smart Input Fields** (`ModernTextField`):
   - **Smart Email Mode** (`FormFieldType.email`): One-tap domain suggestion chips (`@humanize.id`, `@gmail.com`, `@outlook.com`) that auto-complete the user's address.
@@ -53,10 +53,10 @@ A **modern, lightweight, and customizable** Flutter forms library featuring a de
   - `ModernRatingField` — Interactive 5-star rating selector with dynamic sentiment labels (`Needs Work` to `Outstanding!`).
   - `ModernSliderField`, `ModernSwitchCard`, and `ModernDropdownField`.
 - 🎨 **6 Built-in Studio Theme Presets** (`FormsStyle`):
-  - `FormsStyle.modernIndigo()` — Crisp SaaS light surface with electric indigo & violet accents.
-  - `FormsStyle.cyberDark()` — Obsidian dark deck with neon cyan (`#00F5D4`) & emerald validation glow.
-  - `FormsStyle.glassAurora()` — Midnight frosted aurora palette with sky blue & indigo gradients.
-  - `FormsStyle.emeraldMinimal()` — Ultra-clean fintech mint/emerald theme.
+  - `FormsStyle.modernIndigo()` — Crisp SaaS light surface with electric indigo & slate borders.
+  - `FormsStyle.cyberDark()` — Obsidian dark surface with cyan (`#00F5D4`) & emerald validation accents.
+  - `FormsStyle.glassAurora()` — Midnight aurora palette with sky blue & indigo accents.
+  - `FormsStyle.emeraldMinimal()` — Clean fintech mint/emerald theme.
   - `FormsStyle.sunsetWarm()` — Warm coral, amber, and rose consumer palette.
   - `FormsStyle.softNeumorphic()` — Tactile soft-UI surface with dual elevation shadows.
 
@@ -68,7 +68,7 @@ Add `forms_example` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  forms_example: ^1.0.0
+  forms_example: ^1.0.1
 ```
 
 Or install via the Flutter CLI:
@@ -109,12 +109,12 @@ class _AccountRegistrationScreenState extends State<AccountRegistrationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF070A12),
+      backgroundColor: const Color(0xFFF8FAFC),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: SmartFormBuilder(
           controller: controller,
-          style: FormsStyle.cyberDark(),
+          style: FormsStyle.modernIndigo(),
           showPresetSelector: true,
           showJsonPreview: true,
           onSubmitted: (result) {
@@ -156,20 +156,20 @@ ModernFormStepper(
 Column(
   children: [
     ModernTextField(
-      label: 'Developer Email',
+      label: 'Work Email',
       type: FormFieldType.email,
       required: true,
       emailDomains: const ['humanize.id', 'gmail.com', 'outlook.com'],
-      style: FormsStyle.cyberDark(),
+      style: FormsStyle.modernIndigo(),
       onChanged: (email) => debugPrint('Email: $email'),
     ),
     const SizedBox(height: 16),
     ModernTextField(
-      label: 'Master Password',
+      label: 'Password',
       type: FormFieldType.password,
       required: true,
       showPasswordMeter: true,
-      style: FormsStyle.cyberDark(),
+      style: FormsStyle.modernIndigo(),
       onChanged: (password) => debugPrint('Password updated'),
     ),
   ],
@@ -182,19 +182,19 @@ Column(
 Column(
   children: [
     ModernTextField(
-      label: 'Credit or Debit Card',
+      label: 'Card Number',
       type: FormFieldType.creditCard,
       initialValue: '4242 4242 4242 4242',
       required: true,
-      style: FormsStyle.glassAurora(),
+      style: FormsStyle.modernIndigo(),
     ),
     const SizedBox(height: 16),
     ModernOtpField(
-      label: '6-Digit Security Code',
+      label: '6-Digit Verification Code',
       length: 6,
       value: '849204',
       required: true,
-      style: FormsStyle.glassAurora(),
+      style: FormsStyle.modernIndigo(),
       onChanged: (code) => debugPrint('OTP: $code'),
     ),
   ],

@@ -269,6 +269,7 @@ class _SmartFormBuilderState extends State<SmartFormBuilder> {
             boxShadow: style.boxShadows,
           ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               if (widget.showPresetSelector) ...<Widget>[
@@ -375,35 +376,39 @@ class _SmartFormBuilderState extends State<SmartFormBuilder> {
     String subtitle,
   ) {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Container(
-          width: 44,
-          height: 44,
+          width: 40,
+          height: 40,
           decoration: BoxDecoration(
-            gradient: style.accentGradient,
-            borderRadius: BorderRadius.circular(13),
+            color: style.primaryColor.withValues(alpha: 0.12),
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(
+              color: style.primaryColor.withValues(alpha: 0.25),
+            ),
           ),
           child: Icon(
             preset.icon,
-            color: Colors.white,
-            size: 22,
+            color: style.primaryColor,
+            size: 20,
           ),
         ),
-        const SizedBox(width: 14),
+        const SizedBox(width: 12),
         Expanded(
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
                 title,
                 style: TextStyle(
                   color: style.textColor,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w800,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w700,
                 ),
               ),
-              const SizedBox(height: 3),
+              const SizedBox(height: 2),
               Text(
                 subtitle,
                 style: TextStyle(
@@ -427,7 +432,7 @@ class _SmartFormBuilderState extends State<SmartFormBuilder> {
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
       decoration: BoxDecoration(
         color: style.fieldFillColor,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(10),
         border: Border.all(color: style.borderColor),
       ),
       child: Column(
@@ -436,7 +441,7 @@ class _SmartFormBuilderState extends State<SmartFormBuilder> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
-                'Form Readiness ($completed/$total fields valid)',
+                'Completed fields: $completed of $total',
                 style: TextStyle(
                   color: style.subtitleColor,
                   fontSize: 12,
@@ -447,18 +452,18 @@ class _SmartFormBuilderState extends State<SmartFormBuilder> {
                 '$pct%',
                 style: TextStyle(
                   color: pct == 100 ? style.successColor : style.primaryColor,
-                  fontSize: 12.5,
-                  fontWeight: FontWeight.w800,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
                 ),
               ),
             ],
           ),
           const SizedBox(height: 6),
           ClipRRect(
-            borderRadius: BorderRadius.circular(6),
+            borderRadius: BorderRadius.circular(4),
             child: LinearProgressIndicator(
               value: _controller.completionProgress,
-              minHeight: 6,
+              minHeight: 5,
               backgroundColor: style.borderColor,
               valueColor: AlwaysStoppedAnimation<Color>(
                 pct == 100 ? style.successColor : style.primaryColor,
@@ -540,23 +545,16 @@ class _SmartFormBuilderState extends State<SmartFormBuilder> {
             borderRadius: BorderRadius.circular(style.borderRadius),
             onTap: _controller.isSubmitting ? null : _handleSubmit,
             child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 14),
+              padding: const EdgeInsets.symmetric(vertical: 13),
               decoration: BoxDecoration(
-                gradient: style.accentGradient,
+                color: style.primaryColor,
                 borderRadius: BorderRadius.circular(style.borderRadius),
-                boxShadow: <BoxShadow>[
-                  BoxShadow(
-                    color: style.primaryColor.withValues(alpha: 0.28),
-                    blurRadius: 12,
-                    offset: const Offset(0, 4),
-                  ),
-                ],
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   const Icon(
-                    Icons.rocket_launch_rounded,
+                    Icons.check_circle_outline_rounded,
                     color: Colors.white,
                     size: 18,
                   ),
@@ -565,8 +563,8 @@ class _SmartFormBuilderState extends State<SmartFormBuilder> {
                     widget.submitLabel,
                     style: const TextStyle(
                       color: Colors.white,
-                      fontSize: 14.5,
-                      fontWeight: FontWeight.w800,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w700,
                     ),
                   ),
                 ],

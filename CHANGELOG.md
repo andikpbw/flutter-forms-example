@@ -1,3 +1,8 @@
+## 1.0.1
+
+* Replaced synthetic SVG diagrams with real pixel-accurate animated Flutter UI recordings (`doc/showcase_banner.gif`, `doc/smart_form_preview.gif`, `doc/wizard_stepper_preview.gif`, `doc/payment_otp_preview.gif`, and `doc/themes_rating_preview.gif`) captured directly from the running `forms_example` widgets.
+* Refined `SmartFormBuilder`, `ModernDropdownField`, and `FormTemplatePreset` typography and layout for clean, professional SaaS form aesthetics.
+
 ## 1.0.0
 
 * Initial stable release of `forms_example`.
@@ -7,4 +12,3 @@
 * Added `ModernChoiceSelector`, `ModernDropdownField`, `ModernSwitchCard`, `ModernSliderField`, `ModernRatingField`, and `ModernOtpField` (segmented 4/6-digit verification code boxes).
 * Added `FormsController` and `FormsValidator` for reactive programmatic form state management, JSON export/import, and composable zero-dependency validation rules.
 * Added 6 studio theme presets in `FormsStyle`: `modernIndigo`, `cyberDark`, `glassAurora`, `emeraldMinimal`, `sunsetWarm`, and `softNeumorphic`.
-* Added animated SVG UI previews in `doc/` and `README.md`.

@@ -243,11 +243,6 @@ class ModernDropdownField extends StatelessWidget {
                 Icons.keyboard_arrow_down_rounded,
                 color: style.primaryColor,
               ),
-              style: TextStyle(
-                color: style.textColor,
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
-              ),
               items: options.map((opt) {
                 return DropdownMenuItem<dynamic>(
                   value: opt.value,

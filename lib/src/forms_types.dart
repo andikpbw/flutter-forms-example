@@ -68,35 +68,32 @@ enum FormAutoValidateMode {
 
 /// Built-in turnkey form template presets for instant scaffolding.
 enum FormTemplatePreset {
-  /// SaaS Account Registration with smart email chips & password meter.
+  /// Account Registration with smart email chips & password strength meter.
   authSignup(
-    title: 'Create Developer Account',
-    subtitle:
-        'Modern authentication form with live password entropy & email chips',
-    icon: Icons.verified_user_rounded,
+    title: 'Create Account',
+    subtitle: 'Enter your details below to register a new workspace account',
+    icon: Icons.person_add_alt_1_rounded,
   ),
 
   /// Payment & Billing Checkout with Luhn credit card & OTP verification.
   paymentCheckout(
-    title: 'Instant Pro Checkout',
-    subtitle:
-        'Auto-formatted card brand detection, Luhn validation & security PIN',
+    title: 'Payment & Billing',
+    subtitle: 'Card network detection, Luhn validation, and 6-digit OTP',
     icon: Icons.credit_card_rounded,
   ),
 
   /// Product Feedback & Experience Survey with ratings, sliders & tags.
   feedbackSurvey(
-    title: 'Product Experience Survey',
-    subtitle:
-        'Interactive star ratings, NPS slider, and multi-select feature chips',
-    icon: Icons.auto_awesome_rounded,
+    title: 'Customer Feedback',
+    subtitle: 'Star rating, satisfaction slider, and multi-select topics',
+    icon: Icons.rate_review_outlined,
   ),
 
   /// Workspace Profile & Preferences Configuration.
   profileOnboarding(
-    title: 'Workspace Onboarding',
-    subtitle: 'Role selection, team capacity stepper, and notification toggles',
-    icon: Icons.rocket_launch_rounded,
+    title: 'Workspace Settings',
+    subtitle: 'Organization URL, target release date, and preferences',
+    icon: Icons.settings_outlined,
   );
 
   /// Creates a [FormTemplatePreset] metadata entry.

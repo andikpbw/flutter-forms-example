@@ -207,8 +207,8 @@ void main() {
       expect(submittedResult, isNotNull);
       expect(submittedResult!.isSuccess, isTrue);
 
-      await tester.ensureVisible(find.text('Instant Pro Checkout'));
-      await tester.tap(find.text('Instant Pro Checkout'));
+      await tester.ensureVisible(find.text('Payment & Billing'));
+      await tester.tap(find.text('Payment & Billing'));
       await tester.pumpAndSettle();
       expect(find.text('Cardholder Name'), findsOneWidget);
       expect(find.text('LUHN OK'), findsOneWidget);

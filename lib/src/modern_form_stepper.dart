@@ -141,6 +141,7 @@ class _ModernFormStepperState extends State<ModernFormStepper> {
             boxShadow: style.boxShadows,
           ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               _buildWizardTitle(style, currentIndex),
@@ -190,6 +191,7 @@ class _ModernFormStepperState extends State<ModernFormStepper> {
         const SizedBox(width: 12),
         Expanded(
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(

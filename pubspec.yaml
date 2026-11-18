@@ -1,6 +1,6 @@
 name: forms_example
 description: A modern, lightweight, and customizable Flutter forms library with schema form builder, multi-step wizards, smart fields, live password meters, and 6 theme presets.
-version: 1.0.0
+version: 1.0.1
 homepage: https://humanize.id
 repository: https://github.com/andikpbw/flutter-forms-example
 issue_tracker: https://github.com/andikpbw/flutter-forms-example/issues
